@@ -1,5 +1,5 @@
 function initClient() {
-    const ws = new WebSocket('ws://localhost:3003');
+    const ws = new WebSocket('ws://52.14.207.216:3003');
 
     // const status = document.getElementById('status');
     // const messages = document.getElementById('messages');
