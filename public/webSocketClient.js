@@ -1,9 +1,6 @@
 function initClient() {
     const ws = new WebSocket('ws://52.14.207.216:3003');
 
-    // const status = document.getElementById('status');
-    // const messages = document.getElementById('messages');
-    // const input = document.getElementById('newMsg');
     const status = $('#status');
     const messages = $('#messages');
     const input = $('#newMsg');

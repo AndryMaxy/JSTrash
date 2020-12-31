@@ -3,40 +3,19 @@
         <link rel="stylesheet" href="styles.css"/>
         <script src="./jquery-3.4.1.min.js"></script>
         <script src="./webSocketClient.js"></script>
-        <!-- <script type="module" src="./main.js"></script> -->
-        <!-- <script type="module" src="web.js"></script> -->
     </head>
     <body>
-        <div id="counter">
-            <p>counter: <span></span></p>
-        </div>
-        <div id='field' class="cc">
-            <div id="player">
-            </div>
-        </div>
         <div id='container'>
             <div id='status'></div>
-            <div id='messages'></div>
+            <div>
+                <ul id='messages'></ul>
+            </div>
             <input id='newMsg' type='text'/>
         </div>
-        <div>
-            <button id="superBtn" type="button">RUN</button>
-        </div>
-        <iframe src="https://www.youtube.com/embed/dXBohfjc4WA" width="680" height="480" allowfullscreen></iframe>
         <script>
                 $(document).ready(() => {
                     initClient();
-                    //alert('Press OK to start');
-                    
-                    //const span = $('#counter').find('span');
-                    //counter(span);
-                   // document.onkeydown = move;
-                   // drawDot();
                 });
-                
-                
-                //let canvas = document.querySelector('.cc');
-                //canvas.getContext('2d').fillRect(22, 33, 10, 10);
             </script>
     </body>
 </html>
