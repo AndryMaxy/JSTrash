@@ -36,7 +36,7 @@ function initClient() {
     const printMessage = (msg) => {
         const li = $('<li></li>');
 
-        li[0].innerHTML = `${msg.name}: ${msg.msg}:`;
+        li[0].innerHTML = `${msg.name}: ${msg.msg}`;
         messages.append(li);
     }
 
