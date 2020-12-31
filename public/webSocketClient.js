@@ -23,7 +23,7 @@ function initClient() {
                 name,
                 msg: inputMsg[0].value
             };
-            ws.send(msg);
+            ws.send(JSON.stringify(msg));
             inputMsg[0].value = '';
         }
     })
@@ -44,5 +44,5 @@ function initClient() {
 
     ws.onclose = () => setStatus('YOU ARE OFFLINE');
 
-    ws.onmessage = response => printMessage(response.data);
+    ws.onmessage = response => printMessage(JSON.parse(response.data));
 }
