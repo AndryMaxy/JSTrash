@@ -5,7 +5,12 @@
         <script src="./webSocketClient.js"></script>
     </head>
     <body>
-        <div id='container'>
+        <div id='nameContainer'>
+            <div>Please Enter your name</div>
+            <input id='name' type='text'/>
+            <button id='confirm'>Click enter to confirm</button>
+        </div>
+        <div id='container' style="display: none;">
             <div id='status'></div>
             <div>
                 <ul id='messages'></ul>
